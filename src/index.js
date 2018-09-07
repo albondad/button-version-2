@@ -53,16 +53,15 @@ class App extends React.Component {
     }
     getStyle() {
         var style = {};
-        if (this.state.counter < 20) { //stage one, default
-            style = {
-                position: "fixed",
-                left: "calc(100vw * " + Math.random() + " - 100px)",
-                top: "calc(100vh * " + Math.random() + " - 50px)",
-                width: "200px",
-                height: "100px",
-            }
+        style = { { //stage one, default
+            position: "fixed",
+            left: "calc(100vw * " + Math.random() + " - 100px)",
+            top: "calc(100vh * " + Math.random() + " - 50px)",
+            width: "200px",
+            height: "100px",
+                     
         }
-        if (this.state.counter <= 30) { //stage three, adds rotation
+        if (this.state.counter >= 20) { //stage three, adds rotation
             style = {
                 position: "fixed",
                 left: "calc(100vw * " + Math.random() + " - 100px)",
@@ -72,7 +71,7 @@ class App extends React.Component {
                 transform: this.getRandomRotation()
             }
         }
-        if (this.state.counter <= 40) { //stage four, adds color
+        if (this.state.counter >= 30) { //stage four, adds color
             style = {
                 position: "fixed",
                 backgroundColor: this.getRandomColor(),
@@ -83,7 +82,7 @@ class App extends React.Component {
                 transform: this.getRandomRotation()
             }
         }
-        if (this.state.counter > 40) { //stage four, adds color
+        if (this.state.counter >= 40) { //stage four, adds color
             style = {
                 position: "fixed",
                 backgroundColor: this.getRandomColor(),
