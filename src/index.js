@@ -91,6 +91,7 @@ class App extends React.Component {
                 width: "200px",
                 height: "100px",
                 transform: this.getRandomScale() + this.getRandomRotation()
+                console.log("hi");
             }
         }
         return style;
