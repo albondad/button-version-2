@@ -8,7 +8,7 @@ class LmaoButton extends React.Component {
     render() {
         return(
             <div className="buttonContent">
-                <p>button</p>
+                <p>ass</p>
             </div>
         );
     }
