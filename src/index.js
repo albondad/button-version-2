@@ -39,7 +39,7 @@ class App extends React.Component {
     }
     addButton() {
         console.log(this.state.counter);
-        if (this.state.counter > 10) { //stage two
+        if (this.state.counter >= 10) { //stage two
             this.state.buttons.push(<LmaoButton/>);
         }
         this.setState({buttons: this.state.buttons, initialMainButtonStyle: true, counter: this.state.counter+1});
@@ -62,7 +62,7 @@ class App extends React.Component {
                 height: "100px",
             }
         }
-        else if (this.state.counter < 30) { //stage three, adds rotation
+        else if (this.state.counter >= 30) { //stage three, adds rotation
             style = {
                 position: "fixed",
                 left: "calc(100vw * " + Math.random() + " - 100px)",
@@ -72,7 +72,7 @@ class App extends React.Component {
                 transform: this.getRandomRotation()
             }
         }
-        else if (this.state.counter < 40) { //stage four, adds color
+        else if (this.state.counter >= 40) { //stage four, adds color
             style = {
                 position: "fixed",
                 backgroundColor: this.getRandomColor(),
@@ -83,7 +83,7 @@ class App extends React.Component {
                 transform: this.getRandomRotation()
             }
         }
-        else if (this.state.counter >= 40) { //stage four, adds color
+        else if (this.state.counter >= 50) { //stage four, adds color
             style = {
                 position: "fixed",
                 backgroundColor: this.getRandomColor(),
