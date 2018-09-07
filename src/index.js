@@ -53,7 +53,7 @@ class App extends React.Component {
     }
     getStyle() {
         var style = {};
-        style = { { //stage one, default
+        style = { //stage one, default
             position: "fixed",
             left: "calc(100vw * " + Math.random() + " - 100px)",
             top: "calc(100vh * " + Math.random() + " - 50px)",
