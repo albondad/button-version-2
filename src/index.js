@@ -53,7 +53,7 @@ class App extends React.Component {
     }
     getStyle() {
         var style = {};
-        if (this.state.counter < 10) { //stage one, default
+        if (this.state.counter < 30) { //stage one, default
             style = {
                 position: "fixed",
                 left: "calc(100vw * " + Math.random() + " - 100px)",
